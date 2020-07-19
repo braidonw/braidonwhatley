@@ -22,5 +22,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/ui")({ layout: "sidebar" }),
     require("autoprefixer"),
+    require("@tailwindcss/typography"),
   ],
 };
