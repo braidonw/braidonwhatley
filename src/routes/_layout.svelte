@@ -1,11 +1,16 @@
 <script>
   import Nav from "components/Nav.svelte";
+  import Footer from "components/Footer.svelte";
 </script>
 
-<Nav />
+<div class="relative flex flex-col">
 
-<body>
-  <div>
-    <slot />
-  </div>
-</body>
+  <Nav />
+
+  <body class="flex-1">
+    <div>
+      <slot />
+    </div>
+  </body>
+  <Footer />
+</div>
