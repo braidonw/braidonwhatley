@@ -1,10 +1,19 @@
 <script>
   import NavButton from "../components/buttons/NavButton.svelte";
   import { scrollTo } from "lib/utils";
-  import { goto } from "@sapper/app";
+  import { goto, stores } from "@sapper/app";
+  let { page } = stores();
   let y;
 
   $: navBgClasses = y > 40 ? "bg-opacity-90 shadow-sm" : "bg-transparent";
+
+  function logoClick(e) {
+    if ($page.path === "/") {
+      scrollTo("top");
+    } else {
+      goto("/");
+    }
+  }
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -17,9 +26,7 @@
     <div class="lg:w-0 lg:flex-1">
       <div class="">
         <button
-          on:click|preventDefault={() => {
-            goto('/').then(() => scrollTo('top'));
-          }}
+          on:click|preventDefault={logoClick}
           class="flex items-center focus:outline-none">
           <span class="text-xl font-black text-gray-900 tracking-wider">
             braidon whatley
@@ -28,8 +35,7 @@
       </div>
     </div>
     <ul class="hidden md:flex space-x-12 items-center">
-      <NavButton url="/about">about braidon</NavButton>
-      <NavButton url="/articles">articles</NavButton>
+      <NavButton url="/articles">blog</NavButton>
       <NavButton url="/resume">resume</NavButton>
       <NavButton url="/contact">get in touch</NavButton>
     </ul>
