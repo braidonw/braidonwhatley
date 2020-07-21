@@ -4,20 +4,20 @@
   import ButtonOutline from "components/buttons/ButtonOutline.svelte";
 </script>
 
-<div class="max-w-screen-sm mt-16 sm:mt-24 md:mt-32 mx-auto">
-  <Heading class="text-center" level="1">Braidon Whatley</Heading>
+<div class="max-w-screen-md mt-16 sm:mt-24 md:mt-32 mx-auto">
+  <Heading class="" level="1">Hey, I'm Braidon</Heading>
 
-  <div class="text-center">
-
+  <div class="">
     <BodyText>
-      A generalist with experience in project management, data analysis, machine
-      learning & data science, and web development.
+      I'm a generalist with a broad set of skills across business
+      transformation, project management, data science and web development.
     </BodyText>
-    <div class="mt-4 flex justify-around">
-      <ButtonOutline>Get in touch</ButtonOutline>
-    </div>
   </div>
-
-  <div class="mt-16" />
+  <div class="mt-8">
+    <BodyText>Think we might be able to work together?</BodyText>
+  </div>
+  <div class="mt-4">
+    <ButtonOutline>Get in touch</ButtonOutline>
+  </div>
 
 </div>

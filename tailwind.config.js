@@ -19,6 +19,12 @@ module.exports = {
         "90": "0.9",
         "95": "0.95",
       },
+      fontSize: {
+        "7xl": "5rem",
+        "8xl": "6rem",
+        "9xl": "8rem",
+        "10xl": "11rem",
+      },
     },
   },
   variants: {

@@ -4,21 +4,31 @@
   export let articleName;
 </script>
 
-<div class="relative w-full pb-12">
+<div class="relative py-16">
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="text-lg max-w-prose mx-auto mb-6">
+      <p
+        class="text-base text-center leading-6 text-gray-600 font-semibold
+        tracking-wide uppercase">
+        Python / SQL Server
+      </p>
+      <Heading level={'3'} class="text-center">{articleName}</Heading>
+      <p class="text-xl text-gray-500 leading-8">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia magnam
+        mollitia quo, unde vitae provident eligendi, vel neque ipsam odio
+        aliquam excepturi quasi soluta odit. Soluta, sapiente sed. Esse,
+        doloribus!
+      </p>
+    </div>
 
-  <div class="flex flex-col bg-gray-200 z-10 shadow">
-    <img
-      class="opacity-25 h-60 object-cover w-full z-10"
-      src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-      alt="" />
-  </div>
-  <div class="group absolute bg-gray-50 z-30 bottom-0 left-12">
-    <button
-      on:click={() => goto(`/blog/${articleName}`)}
-      class=" z-30 border-b-4 border-blue-600 group-hover:text-blue-600
-      group-hover:bg-blue-50 py-4 px-6">
-      <Heading class="italic" level={'4'}>{articleName}</Heading>
-    </button>
+    <div class="mt-6">
+      <button
+        class="text-md font-semibold text-blue-700 border-t-4 uppercase px-3
+        py-2 border-blue-600 italic"
+        on:click={() => goto(`/blog/${articleName}`)}>
+        keep reading
+      </button>
+    </div>
   </div>
 
 </div>

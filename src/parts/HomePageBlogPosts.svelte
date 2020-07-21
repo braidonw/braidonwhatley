@@ -5,10 +5,10 @@
 </script>
 
 <div class="relative max-w-screen-md mt-16 sm:mt-24 md:mt-32 mx-auto">
-  <Heading class="text-center" level={'2'}>My Blog</Heading>
+  <Heading class="" level={'2'}>Writing</Heading>
 
-  <div class="text-center">
-    <BodyText>Here's what I've been writing about.</BodyText>
+  <div class="">
+    <BodyText>Here's what I've been writing about recently.</BodyText>
   </div>
 
   <div class="py-6 space-y-10">
