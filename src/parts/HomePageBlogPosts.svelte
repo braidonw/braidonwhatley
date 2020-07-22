@@ -2,6 +2,8 @@
   import Heading from "components/type/Heading.svelte";
   import BodyText from "components/type/BodyText.svelte";
   import BlogCard from "../parts/blog/BlogCard.svelte";
+
+  export let posts;
 </script>
 
 <div class="relative max-w-screen-md mt-16 sm:mt-24 md:mt-32 mx-auto">
@@ -11,9 +13,15 @@
     <BodyText>Here's what I've been writing about recently.</BodyText>
   </div>
 
-  <div class="py-6 space-y-10">
-    <BlogCard
-      articleName={'Structuring Customer Relationships - Part 1 of 2'} />
-
+  <div class="py-6 space-y-10 divide-y divide-gray-100">
+    {#each posts as post}
+      <BlogCard
+        title={post.title}
+        subtitle={post.subtitle}
+        publishDate={post.published}
+        leadText={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis tenetur debitis facere fuga nulla non cum consectetur doloribus ratione?'}
+        type={post.type}
+        slug={post.slug} />
+    {/each}
   </div>
 </div>

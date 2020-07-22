@@ -17,7 +17,7 @@
   import Heading from "components/type/Heading.svelte";
   import BodyText from "components/type/BodyText.svelte";
   import TextLink from "components/buttons/TextLink.svelte";
-  import BlogCard from "parts/blog/ShortBlogCard.svelte";
+  import BlogCard from "parts/blog/BlogCard.svelte";
   export let posts;
 </script>
 

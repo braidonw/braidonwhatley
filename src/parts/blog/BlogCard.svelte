@@ -1,34 +1,52 @@
 <script>
   import Heading from "components/type/Heading.svelte";
-  import { goto } from "@sapper/app";
-  export let articleName;
+  import BodyText from "components/type/BodyText.svelte";
+  import TextLink from "components/buttons/TextLink.svelte";
+  export let title;
+  export let subtitle;
+  export let publishDate;
+  export let type;
+  export let slug;
+  export let leadText;
+
+  let typeClasses =
+    "bg-teal-50 text-teal-600 rounded-full text-sm uppercase font-medium px-2 py-1";
 </script>
 
-<div class="relative py-16">
-  <div class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-6">
-      <p
-        class="text-base text-center leading-6 text-gray-600 font-semibold
-        tracking-wide uppercase">
-        Python / SQL Server
-      </p>
-      <Heading level={'3'} class="text-center">{articleName}</Heading>
-      <p class="text-xl text-gray-500 leading-8">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia magnam
-        mollitia quo, unde vitae provident eligendi, vel neque ipsam odio
-        aliquam excepturi quasi soluta odit. Soluta, sapiente sed. Esse,
-        doloribus!
-      </p>
-    </div>
+<div>
+  <a href={`/writing/${slug}`} class="focus:outline-none">
+    <div class="px-4 -y5 sm:p-6 bg-white rounded-lg shadow-lg">
 
-    <div class="mt-6">
-      <button
-        class="text-md font-semibold text-blue-700 border-t-4 uppercase px-3
-        py-2 border-blue-600 italic"
-        on:click={() => goto(`/blog/${articleName}`)}>
-        keep reading
-      </button>
-    </div>
-  </div>
+      <div class="py-1 flex justify-between">
+        <div>
+          <span class="text-md text-gray-500 font-medium">{publishDate}</span>
+        </div>
 
+        <div class="">
+          <span class={typeClasses}>{type}</span>
+
+        </div>
+
+      </div>
+
+      <span class="group-hover:underline">
+        <Heading level="3">{title}</Heading>
+      </span>
+
+      <div class="mt-1">
+        <BodyText weight="sm">{leadText}</BodyText>
+
+      </div>
+
+      <div class="mt-1">
+        <TextLink
+          class="group-hover:text-blue-800 border-blue-800"
+          url={`/writing/${slug}`}>
+          Read more →
+        </TextLink>
+
+      </div>
+
+    </div>
+  </a>
 </div>

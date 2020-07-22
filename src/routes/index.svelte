@@ -24,4 +24,4 @@
 
 <Hero />
 <MyWork />
-<HomePageBlogPosts />
+<HomePageBlogPosts {posts} />
