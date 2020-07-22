@@ -22,10 +22,10 @@
 
 <div class="mt-16 mx-auto max-w-screen-md px-4 py-5 sm:p-6">
   <article class="prose prose-sm sm:prose md:prose-lg lg:prose-xl">
-    <h1 class="text-center">{post.title}</h1>
     {#if post.subtitle}
-      <p class="text-center lead">{post.subtitle}</p>
+      <p class="lead">{post.subtitle}</p>
     {/if}
+    <h1 class="">{post.title}</h1>
     {@html post.html}
   </article>
 </div>

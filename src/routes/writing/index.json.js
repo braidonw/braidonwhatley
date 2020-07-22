@@ -3,7 +3,7 @@ import path from "path";
 import grayMatter from "gray-matter";
 
 const getAllArticles = () => {
-  fs.readdirSync("blog-content").map((filename) => {
+  return fs.readdirSync("blog-content").map((filename) => {
     const post = fs.readFileSync(
       path.resolve("blog-content", filename),
       "utf-8"
@@ -16,6 +16,7 @@ export function get(req, res) {
   res.writeHead(200, {
     "Content-type": "application/json",
   });
-  const posts = getAllArticles();
-  res.end(JSON.stringify(posts));
+
+  let articles = getAllArticles();
+  res.end(JSON.stringify(articles));
 }

@@ -7,8 +7,8 @@
 
   <Nav />
 
-  <body class="flex-1">
-    <div>
+  <body class="flex-1 max-w-screen-md mx-auto">
+    <div class="space-y-16">
       <slot />
     </div>
   </body>

@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import grayMatter from "gray-matter";
 import marked from "marked";
-import hljs from "highlight.js";
+// import hljs from "highlight.js";
 
 const getArticle = (fileName) => {
   return fs.readFileSync(
@@ -19,7 +19,7 @@ export function get(req, res, next) {
   const renderer = new marked.Renderer();
 
   renderer.code = (source, lang) => {
-    const { value: highlighted } = hljs.highlight(lang, source);
+    //const { value: highlighted } = hljs.highlight(lang, source);
 
     return `<pre class=""><code>${source}</code></pre>`;
   };

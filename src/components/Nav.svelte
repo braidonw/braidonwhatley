@@ -35,7 +35,7 @@
       </div>
     </div>
     <ul class="hidden md:flex space-x-12 items-center">
-      <NavButton url="/articles">blog</NavButton>
+      <NavButton url="/writing">writing</NavButton>
       <NavButton url="/resume">resume</NavButton>
       <NavButton url="/contact">get in touch</NavButton>
     </ul>
