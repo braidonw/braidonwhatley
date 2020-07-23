@@ -3,6 +3,9 @@
   import Footer from "components/Footer.svelte";
 </script>
 
+<svelte:head>
+  <title>Braidon Whatley</title>
+</svelte:head>
 <div class="relative flex flex-col">
 
   <Nav />

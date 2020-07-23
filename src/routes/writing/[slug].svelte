@@ -16,10 +16,6 @@
   export let post;
 </script>
 
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
-
 <div class="mt-16 mx-auto max-w-screen-md px-4 py-5 sm:p-6">
   <article class="prose prose-sm sm:prose md:prose-lg lg:prose-xl">
     {#if post.subtitle}
