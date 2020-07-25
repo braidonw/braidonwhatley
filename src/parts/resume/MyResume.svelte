@@ -49,7 +49,7 @@
       <div class="space-y-10 mt-3">
         <Job
           organisation={'Woolworths'}
-          jobTitle={'Contractor'}
+          jobTitle={'Consultant'}
           organisationURL={'www.woolworths.com.au'}
           fromDate={'May 2020'}
           toDate={'Present'}>

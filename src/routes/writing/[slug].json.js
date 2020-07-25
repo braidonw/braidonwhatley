@@ -6,24 +6,16 @@ import marked from "marked";
 
 const getArticle = (fileName) => {
   return fs.readFileSync(
-    path.resolve("blog-content", `${fileName}.md`),
+    path.resolve("static/posts/", `${fileName}.md`),
     "utf-8"
   );
 };
 
-export function get(req, res, next) {
+export function get(req, res, _) {
   const { slug } = req.params;
 
   const article = getArticle(slug);
-
   const renderer = new marked.Renderer();
-
-  renderer.code = (source, lang) => {
-    //const { value: highlighted } = hljs.highlight(lang, source);
-
-    return `<pre class=""><code>${source}</code></pre>`;
-  };
-
   const { data, content } = grayMatter(article);
 
   const html = marked(content, { renderer });

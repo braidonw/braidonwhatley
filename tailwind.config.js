@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["SpaceGrotesk", "Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["gangstergrotesk", "Inter var", ...defaultTheme.fontFamily.sans],
+        title: ["SpaceGrotesk"],
         // sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       },
       spacing: {

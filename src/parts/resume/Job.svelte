@@ -1,4 +1,6 @@
 <script>
+  import TextLink from "components/buttons/TextLink.svelte";
+
   export let organisation = "Winc Australia Pty Ltd";
   export let organisationURL = "www.winc.com.au";
   export let jobTitle = "Project Manager";
@@ -15,17 +17,15 @@
         at
         <span class="font-semibold">
           {#if organisationURL}
-            <a
-              class="text-blue-600 underline"
-              href={`https://${organisationURL}`}>
+            <TextLink url={`https://${organisationURL}`}>
               {organisation}
-            </a>
+            </TextLink>
           {:else}{organisation}{/if}
         </span>
       </span>
     </div>
 
-    <div class="">
+    <div class="mt-1">
       <span class="text-md font-normal text-gray-900">{location}</span>
       &middot
       <span class="text-md font-normal text-gray-900">{fromDate}</span>

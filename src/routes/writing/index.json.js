@@ -3,16 +3,20 @@ import path from "path";
 import grayMatter from "gray-matter";
 
 const getAllArticles = () => {
-  return fs.readdirSync("blog-content").map((filename) => {
-    const post = fs.readFileSync(
-      path.resolve("blog-content", filename),
-      "utf-8"
-    );
-    return grayMatter(post).data;
-  });
+  try {
+    return fs.readdirSync("static/posts/").map((filename) => {
+      const post = fs.readFileSync(
+        path.resolve("static/posts", filename),
+        "utf-8"
+      );
+      return grayMatter(post).data;
+    });
+  } catch (e) {
+    return [];
+  }
 };
 
-export function get(req, res) {
+export function get(_, res) {
   res.writeHead(200, {
     "Content-type": "application/json",
   });
