@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+backend:
+name: github
+repo: braidonw/braidonwhatley # Path to your GitHub repository
+
 publish_mode: editorial_workflow # Allows you to save drafts before publishing them
 media_folder: static/uploads # Media files will be stored in the repo under static/images/uploads
 public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
