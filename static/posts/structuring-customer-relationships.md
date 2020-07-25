@@ -4,6 +4,9 @@ title: Structuring Customer Relationships
 type: Case Study
 subtitle: Part 1 of 2
 published: 26th July 2020
+date: 26th July, 2020
+preview: I was engaged by a client to help them impose a structure on their B2B
+  customer data in preparation for rolling out a new set of e-commerce services.
 ---
 
 ## Background
