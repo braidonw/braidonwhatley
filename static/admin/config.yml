@@ -7,7 +7,7 @@ media_folder: static/uploads # Media files will be stored in the repo under stat
 public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  - name: "writing" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "static/posts" # The path to the folder where our blog posts are stored
     create: true # Allow users to create new documents in this collection
@@ -15,3 +15,6 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Type", name: "type", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "PublishDate", name: "published", widget: "string" }
