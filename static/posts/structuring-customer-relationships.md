@@ -1,5 +1,5 @@
 ---
-slug: structuring-customer-data-1
+slug: structuring-customer-relationships-1
 title: Structuring Customer Relationships
 type: Case Study
 subtitle: Part 1 of 2
