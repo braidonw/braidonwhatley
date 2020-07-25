@@ -1,7 +1,7 @@
 <script>
   export let level = "1";
   export { extraClasses as class };
-  let extraClasses;
+  let extraClasses = "";
   let h1Classes = "text-5xl md:text-6xl font-extrabold text-gray-900";
   let h2Classes = "text-4xl md:text-5xl font-bold text-gray-900";
   let h3Classes = "text-xl md:text-2xl font-semibold text-gray-700";

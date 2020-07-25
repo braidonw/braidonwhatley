@@ -3,19 +3,33 @@
     class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center
     md:justify-between lg:px-8">
     <div class="flex justify-center md:order-2">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      <a
+        href="https://www.linkedin.com/in/braidon-whatley-23916574/"
+        class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">LinkedIn</span>
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <svg
+          class="h-6 w-6"
+          version="1.1"
+          fill="currentColor"
+          viewBox="0 0 100 100"
+          style="enable-background:new 0 0 100 100;"
+          xml:space="preserve">
           <path
-            fill-rule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128
-            8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89
-            1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63
-            1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clip-rule="evenodd" />
+            d="M50,0C22.4,0,0,22.4,0,50s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z
+            M36,75.3c-3.5,0-7,0-10.5,0c0-11.2,0-22.4,0-33.6
+            c0-0.1,0-0.2,0.1-0.2c3.5,0,7,0,10.5,0C36,52.7,36,64,36,75.3z
+            M27.3,35.9c-1.6-1.1-2.9-3.4-2.6-6.1c0.3-2,1.7-3.7,3.2-4.5
+            c0.5-0.3,1.2-0.5,2-0.5c4-0.5,7,2.3,7,6.1C36.8,35.5,31.5,38.7,27.3,35.9z
+            M75.4,75.3c-3.5,0-7,0-10.5,0c0-3.8,0-7.8,0-12.1
+            c0-5.1,0.7-11-2.8-12.8c-1.7-0.9-4-0.6-5.5,0c-3.8,1.7-3.5,7.1-3.5,13c0,4.1,0,8.4,0,11.9c-3.5,0-7,0-10.5,0c0-11.3,0-22.6,0-33.8
+            c3.4,0,6.7,0,10.1,0c0,1.5,0,3.1,0,4.6c0.4-0.3,0.5-0.7,0.8-1.1c1.8-2.4,5-4.4,9.1-4.4c5.2,0,8.9,1.8,10.8,5.1c2,3.5,2,8.4,2,13.9
+            C75.4,64.7,75.4,70.3,75.4,75.3z" />
         </svg>
+
       </a>
-      <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+      <a
+        href="https://www.github.com/braidonw"
+        class="ml-6 text-gray-400 hover:text-gray-500">
         <span class="sr-only">GitHub</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path
@@ -35,7 +49,7 @@
             clip-rule="evenodd" />
         </svg>
       </a>
-      <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+      <a href="www.karework.com" class="ml-6 text-gray-400 hover:text-gray-500">
         <span class="sr-only">Karework</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path
