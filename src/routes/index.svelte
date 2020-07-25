@@ -18,10 +18,28 @@
   import Hero from "parts/Hero.svelte";
   import MyWork from "parts/MyWork.svelte";
   import HomePageBlogPosts from "parts/HomePageBlogPosts.svelte";
+  import { onMount } from "svelte";
 
   export let posts;
+
+  onMount(() => {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
 </script>
 
+<svelte:head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+
+  </script>
+</svelte:head>
 <Hero />
 <MyWork />
 <HomePageBlogPosts {posts} />
