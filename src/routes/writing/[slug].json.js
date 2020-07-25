@@ -33,7 +33,7 @@ export function get(req, res, _) {
 
     res.end(
       JSON.stringify({
-        message: "Not found",
+        message: "Not found.",
       })
     );
   }
