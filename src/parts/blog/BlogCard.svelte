@@ -7,7 +7,7 @@
   export let publishDate;
   export let type;
   export let slug;
-  export let previewText;
+  export let preview;
 
   let typeClasses =
     "bg-teal-50 text-teal-600 rounded-full text-sm uppercase font-medium px-2 py-1";
@@ -34,7 +34,7 @@
       </span>
 
       <div class="mt-1">
-        <BodyText weight="sm">{previewText}</BodyText>
+        <BodyText weight="sm">{preview}</BodyText>
 
       </div>
 

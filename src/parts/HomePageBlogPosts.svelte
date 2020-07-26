@@ -15,11 +15,12 @@
 
   <div class="py-6 space-y-10 divide-y divide-gray-100">
     {#each posts as post}
+      <pre>{JSON.stringify(post, 0, 2)}</pre>
       <BlogCard
         title={post.title}
         subtitle={post.subtitle}
         publishDate={post.published}
-        leadText={post.preview}
+        preview={post.preview}
         type={post.type}
         slug={post.slug} />
     {/each}
