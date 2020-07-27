@@ -6,7 +6,7 @@
 
 <a
   href={`${url}`}
-  class="text-blue-600 underline hover:text-blue-800 hover:border-blue-800
+  class="text-blue-600 hover:text-blue-800 hover:underline hover:border-blue-800
   focus:outline-none {classes}">
   <slot>Read more →</slot>
 </a>
