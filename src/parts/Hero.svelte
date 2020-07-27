@@ -1,4 +1,5 @@
 <script>
+  import { scrollTo } from "lib/utils";
   import Heading from "components/type/Heading.svelte";
   import BodyText from "components/type/BodyText.svelte";
   import ButtonOutline from "components/buttons/ButtonOutline.svelte";
@@ -26,6 +27,8 @@
     <BodyText>Think we might be able to work together?</BodyText>
   </div>
   <div class="mt-8">
-    <ButtonOutline>Get in touch</ButtonOutline>
+    <ButtonOutline on:click={() => scrollTo('#get-in-touch')}>
+      Get in touch
+    </ButtonOutline>
   </div>
 </div>

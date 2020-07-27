@@ -18,6 +18,7 @@
   import Hero from "parts/Hero.svelte";
   import MyWork from "parts/MyWork.svelte";
   import HomePageBlogPosts from "parts/HomePageBlogPosts.svelte";
+  import GetInTouch from "parts/GetInTouch.svelte";
   import { onMount } from "svelte";
 
   export let posts;
@@ -43,3 +44,4 @@
 <Hero />
 <MyWork />
 <HomePageBlogPosts {posts} />
+<GetInTouch />

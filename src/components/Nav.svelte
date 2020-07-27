@@ -37,7 +37,7 @@
     <ul class="hidden md:flex space-x-12 items-center">
       <NavButton url="/writing">writing</NavButton>
       <NavButton url="/resume">resume</NavButton>
-      <NavButton url="/contact">get in touch</NavButton>
+      <NavButton identifier={'#get-in-touch'}>get in touch</NavButton>
     </ul>
   </nav>
 </div>
