@@ -31,7 +31,7 @@
         title={post.title}
         subtitle={post.subtitle}
         publishDate={post.published}
-        leadText={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis tenetur debitis facere fuga nulla non cum consectetur doloribus ratione?'}
+        preview={post.preview}
         type={post.type}
         slug={post.slug} />
     {/each}

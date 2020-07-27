@@ -7,10 +7,10 @@
 </script>
 
 <div class="relative max-w-screen-md mt-16 sm:mt-24 md:mt-32 mx-auto">
-  <Heading class="" level={'2'}>Writing</Heading>
+  <Heading class="" level={'2'}>My Writing</Heading>
 
   <div class="">
-    <BodyText>Here's what I've been writing about recently.</BodyText>
+    <BodyText>Here's what I've been writing about</BodyText>
   </div>
 
   <div class="py-6 space-y-10 divide-y divide-gray-100">
